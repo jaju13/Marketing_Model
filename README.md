@@ -72,7 +72,15 @@ The results for the exercise are located  'Documents' folder. This contains the 
 
 
 ./Notebooks : This folder contains files used for EDA, Data preparation, Model training and selection. 
+    ClassificationModel.ipynb :  This file contains various strategies used to build 3 classification models for determining propensity of clients to buy a financial v 
+    product. It can run multiple combinations of various strategies such as : ML model (logreg,svm,xgboost), parameter combinations for the ML models, include/ not include 
+    oversampling, grid search parameters such as scoring metric, forward feature selection enabled or disabled, include ensemble methods or not etc. 
+    To run this file, simlpy run all cells, it will automaticall run 1 combination and save the results in ./models/stratified folder. 
 
+    Regression Model.ipynb : This trains the final model for regression to predict revenue amount likely from each client. It runs grid search over parameters for Ridge 
+    regression. To run this file, simlpy run all cells, it will automaticall run 1 combination and save the results in ./models/stratified folder.
+
+    EDA and Data Cleaning.ipynb : This file contains all EDA carried out on the data and removal of outliers. 
 
 ./predicted_results : Results from prediction on for clients with no sale information are stored here.
 
