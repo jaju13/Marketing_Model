@@ -16,7 +16,7 @@ Follow these steps to install the project:
     ```
 2. Navigate into the project folder:
     ```bash
-    cd Marketing_Model
+    cd <project folder>
     ```
 3. Create a virtual environment:
     ```bash
