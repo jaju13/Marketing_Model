@@ -60,3 +60,11 @@ The above command will generate the following files under predicted_results fold
 The results for the exercise are located  'Documents' folder. This contains the following files:
 (i) Direct marketing optimization-Executive Summary.pptx : executive summary of the approach and results. 
 (ii)Targeted Client List.xlsx
+
+## Folder structure and information
+./data : contains pickled data which has been cleaned and outliers have been removed during EDA
+./models : Contains models that were selected through grid search , and identified as the best performing models. Identificationw was done through "Modulerized Modeling.iynb" notebook. 
+./Documents : Results for the exercise. Details under "Results" section
+./Notebooks : This folder contains files used for EDA, Data preparation, Model training and selection. 
+./predicted_results : Results from prediction on for clients with no sale information are stored here.
+
