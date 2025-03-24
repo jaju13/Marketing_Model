@@ -1,0 +1,9 @@
+pandas==1.5.3
+numpy==1.23.5
+pathlib==1.0.1
+tabulate==0.8.10
+matplotlib==3.7.0
+seaborn==0.12.2
+scikit-learn==1.2.1
+xgboost==3.0.0
+imbalanced-learn==0.10.1
