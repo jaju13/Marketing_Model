@@ -1,0 +1,73 @@
+{
+    "data_prep_config": {
+        "numeric_cols_to_standardize": [
+            "Age",
+            "Tenure",
+            "Count_CA",
+            "Count_SA",
+            "Count_MF",
+            "Count_OVD",
+            "Count_CC",
+            "Count_CL",
+            "ActBal_CA",
+            "ActBal_SA",
+            "ActBal_MF",
+            "ActBal_OVD",
+            "ActBal_CC",
+            "ActBal_CL",
+            "VolumeCred",
+            "TransactionsCred",
+            "VolumeDeb",
+            "VolumeDebCash_Card",
+            "VolumeDebCashless_Card",
+            "VolumeDeb_PaymentOrder",
+            "TransactionsDeb",
+            "TransactionsDebCash_Card",
+            "TransactionsDebCashless_Card",
+            "TransactionsDeb_PaymentOrder"
+        ],
+        "cat_cols_to_encode": [
+            "Sex"
+        ],
+        "target_variable": "Sale_MF",
+        "test_split_size": 0.2
+    },
+    "model_type": "xgboost",
+    "oversampling_method": "NA",
+    "xgboost_eval_m": "auc",
+    "param_grid": {
+        "n_estimators": [
+            100,
+            200,
+            300
+        ],
+        "max_depth": [
+            3,
+            5,
+            7,
+            10
+        ],
+        "learning_rate": [
+            0.005,
+            0.01,
+            0.1,
+            0.2
+        ],
+        "subsample": [
+            0.8,
+            1.0
+        ],
+        "colsample_bytree": [
+            0.8,
+            1.0
+        ],
+        "scale_pos_weight": [
+            5
+        ]
+    },
+    "grid_search_params": {
+        "scoring": "roc_auc",
+        "num_cv": 5
+    },
+    "class_weights": "NA"
+}
